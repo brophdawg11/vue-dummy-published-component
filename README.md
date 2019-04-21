@@ -1,14 +1,14 @@
 ## vue-dummy-published-component
 
-This is a sample boilerplate repo for a Vue component that you intend to publish to the NPM registry.  It is based on the [Packaging Vue Components for npm] entry in the Vue Cookbook, and the assosciated [vue-sfc-rollup GitHub repo](https://github.com/team-innovation/vue-sfc-rollup). 
+This is a sample boilerplate repo for a Vue component that you intend to publish to the NPM registry.  It is based on the [Packaging Vue Components for npm](https://vuejs.org/v2/cookbook/packaging-sfc-for-npm.html) entry in the Vue Cookbook, and the associated [vue-sfc-rollup GitHub repo](https://github.com/team-innovation/vue-sfc-rollup). 
 
 ### What's Different About this Boilerplate?
 
 This adds a few new features that you mind useful when creating a robust open-source Vue component (all of which you are welcome to change once your fork for your own purposes): 
 
 * Code linting via [`eslint`](https://eslint.org/)
-  * Leverages the [AirBnb ESLint Config](https://github.com/airbnb/javascript) via the [`eslint-config-airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base( plugin)
-  * Adds the [`eslint-plugin-vue`](https://github.com/vuejs/eslint-plugin-vue) plugin with the "recommended" settings
+  * Leverages the [AirBnb ESLint Config](https://github.com/airbnb/javascript) via the [`eslint-config-airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) plugin
+  * Adds [`eslint-plugin-vue`](https://github.com/vuejs/eslint-plugin-vue) plugin with the "recommended" settings
   * Configured via [`.eslintrc.js`](./.eslintrc.js)
 * Unit testing via [`jest`](https://jestjs.io/) and [`@vue/test-utils`](https://vue-test-utils.vuejs.org)
   * Configured via [`jest.config.js`](./jest.config.js)
@@ -37,7 +37,7 @@ To get started with your own publishable component, I would start by copying it 
 #### Things to Add
 
 * Add some docs for how users can file issues and contribute back to your open-source components.  Check out the [Mozilla Science Lab Post](https://mozillascience.github.io/working-open-workshop/contributing/) for ideas and examples
-* Don't forget to host your Storybook somewhere so users can access it.  [gitHub Pages](https://pages.github.com/) is one potential solution.
+* Don't forget to host your Storybook somewhere so users can access it.  [GitHub Pages](https://pages.github.com/) is one potential solution.
 
 ### Usage
 
