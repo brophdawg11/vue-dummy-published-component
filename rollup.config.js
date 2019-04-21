@@ -4,13 +4,23 @@ import commonjs from 'rollup-plugin-commonjs';
 import replace from 'rollup-plugin-replace';
 import uglify from 'rollup-plugin-uglify-es';
 import minimist from 'minimist';
+import pkgJson from './package.json';
 
 const argv = minimist(process.argv.slice(2));
 
-const config = {
+// Map incoming --format args to the expected output filenames based on package.json
+const fileTypeMap = {
+    umd: pkgJson.main.split('/').splice(-1),
+    es: pkgJson.module.split('/').splice(-1),
+    iife: pkgJson.unpkg.split('/').splice(-1),
+};
+
+export default {
     input: 'src/index.js',
     output: {
+        // Global name of the component in UMD builds (i.e., window.DummyComponent)
         name: 'DummyComponent',
+        file: `dist/${fileTypeMap[argv.format]}`,
         exports: 'named',
     },
     plugins: [
@@ -26,12 +36,7 @@ const config = {
             },
         }),
         buble(),
+        // Only minify browser (iife) version
+        ...(argv.format === 'iife' ? [uglify()] : []),
     ],
 };
-
-// Only minify browser (iife) version
-if (argv.format === 'iife') {
-    config.plugins.push(uglify());
-}
-
-export default config;

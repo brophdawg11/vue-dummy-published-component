@@ -12,6 +12,6 @@ export default {
 
 <style>
 .heading {
-    color:red;
+    color: red;
 }
 </style>
