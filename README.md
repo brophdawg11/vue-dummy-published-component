@@ -32,7 +32,7 @@ To get started with your own publishable component, I would start by copying it 
 * Update all relevant `package.json` fields (`name`, `author`, `repository`, etc.)
 * Modify the exported component name in [`rollup.config.js`](./rollup.config.js)
 * Write your component, Unit tests, Stories, and E2E Tests!
-* Update the [LICENSE.md](./LICENSE.md`) with the proper license and attribution
+* Update the [LICENSE.md](./LICENSE.md) file with the proper license and attribution
 
 #### Things to Add
 
@@ -58,3 +58,6 @@ npm run storybook:build
 npm run test:unit
 ```
 
+### Publishing to NPM
+
+Please refer to the [NPM documentation](https://docs.npmjs.com/packages-and-modules/contributing-packages-to-the-registry)
