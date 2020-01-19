@@ -4,7 +4,7 @@ This is a sample boilerplate repo for a Vue component that you intend to publish
 
 ### What's Different About this Boilerplate?
 
-This adds a few new features that you mind useful when creating a robust open-source Vue component (all of which you are welcome to change once your fork for your own purposes): 
+This adds a few new features that you mind useful when creating a robust open-source Vue component (all of which you are welcome to change once you fork for your own purposes): 
 
 * Code linting via [`eslint`](https://eslint.org/)
   * Leverages the [AirBnb ESLint Config](https://github.com/airbnb/javascript) via the [`eslint-config-airbnb-base`](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base) plugin
@@ -55,7 +55,7 @@ npm run storybook
 npm run storybook:build
 
 # Run E2E Tests against built Storybook
-npm run test:unit
+npm run test:e2e
 ```
 
 ### Publishing to NPM
