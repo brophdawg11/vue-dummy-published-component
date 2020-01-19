@@ -10,9 +10,11 @@ module.exports = {
     },
     extends: [
         'airbnb-base',
+        'plugin:cypress/recommended',
         'plugin:vue/recommended'
     ],
     plugins: [
+        'cypress',
         'vue',
     ],
     rules: {
