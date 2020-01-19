@@ -1,9 +1,10 @@
-import vue from 'rollup-plugin-vue';
-import buble from 'rollup-plugin-buble';
-import commonjs from 'rollup-plugin-commonjs';
-import replace from 'rollup-plugin-replace';
-import uglify from 'rollup-plugin-uglify-es';
+import buble from '@rollup/plugin-buble';
+import commonjs from '@rollup/plugin-commonjs';
+import replace from '@rollup/plugin-replace';
 import minimist from 'minimist';
+import { terser } from 'rollup-plugin-terser';
+import vue from 'rollup-plugin-vue';
+
 import pkgJson from './package.json';
 
 const argv = minimist(process.argv.slice(2));
@@ -37,6 +38,6 @@ export default {
         }),
         buble(),
         // Only minify browser (iife) version
-        ...(argv.format === 'iife' ? [uglify()] : []),
+        ...(argv.format === 'iife' ? [terser()] : []),
     ],
 };
