@@ -66,9 +66,9 @@
     "rimraf": "3.0.0",
     "rollup": "1.29.0",
     "rollup-plugin-terser": "5.2.0",
-    "rollup-plugin-vue": "5.1.5",
+    "rollup-plugin-vue": "6.0.0",
     "vue": "2.6.11",
-    "vue-jest": "3.0.5",
+    "vue-jest": "4.0.1",
     "vue-loader": "15.8.3",
     "vue-template-compiler": "2.6.11"
   }
